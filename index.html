@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Slab:wght@200&family=Titan+One&display=swap" rel="stylesheet">
     <title>Netflix</title>
 </head>
 <style>
@@ -14,18 +15,21 @@
     }
 
     #container {
-
         background-color: rgba(0, 0, 0, .5);
-
         margin: auto;
         height: 95vh;
         width: 90vw;
     }
     #name, #age, #email{
-            
+            width: 15vw;
+            height: 4vh;
     }
     #title {
-        padding-left: 45%;
+        margin: auto;
+        font-family: 'Titan One', cursive;;
+        font-weight: bolder;
+        text-align: center;
+        font-size:30px;    
     }
 
     #description {
@@ -35,33 +39,27 @@
     #survey-form {
         background-color: black;
         width: 20vw;
-        height: 70vh;
+        height: 77vh;
         margin: auto;
         padding: 20px;
     }
     #submit {
         list-style-type: none;
-        border-radius: 15px;
-        width: 220px;
+        border-radius: 30px;
+        width: 100px;
         background-color: red;
         color: white;
-        margin: auto;
+        margin-left: 30%;
     }
-    #net{
-        font-weight: bolder;
-        font-size: large;
-    }
-    #flix{
-
-    }
+   
 
 </style>
 
 <body>
     <div id="container">
         <div id="title">
-            <span id="net">NET</span>
-            <span id="flix">FLIX</span>
+            <span style="color: red;" id="net">NET</span>
+            <span style="color: white;" id="flix">FLIX</span>
         </div>
         <div>
             <p id="description">Thank you for signing up at Netflix. Tell us more about yourself</p>
@@ -81,7 +79,7 @@
                 <input type="email" id="email" class="box" placeholder="Enter your email">
             </div>
             <div>
-                <label for="content">Content Type</label><br>
+                <label id="content" for="content">Content Type</label><br>
                 <select name="" class="box">
                     <option value="series">Series</option><br>
                     <option value="romance">Romance</option><br>
