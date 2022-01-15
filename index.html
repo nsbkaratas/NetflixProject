@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,65 @@
     <title>Netflix</title>
 </head>
 <style>
-body{
-    background-image: url(./NetflixProject/images/background_image.jpg);
-    color: white;
-}
-#container{
-    border: 5px solid white;
-    margin: auto;
-    height: 95vh;
-    width: 90vw;
-}
-#title{
-    padding-left: 43%;
-}
+    body {
+        background-image: url(./images/background_image.jpg);
+        color: white;
+    }
+
+    #container {
+
+        background-color: rgba(0, 0, 0, .5);
+
+        margin: auto;
+        height: 95vh;
+        width: 90vw;
+    }
+    #name, #age, #email{
+            
+    }
+    #title {
+        padding-left: 45%;
+    }
+
+    #description {
+        padding-left: 35%;
+    }
+
+    #survey-form {
+        background-color: black;
+        width: 20vw;
+        height: 70vh;
+        margin: auto;
+        padding: 20px;
+    }
+    #submit {
+        list-style-type: none;
+        border-radius: 15px;
+        width: 220px;
+        background-color: red;
+        color: white;
+        margin: auto;
+    }
+    #net{
+        font-weight: bolder;
+        font-size: large;
+    }
+    #flix{
+
+    }
 
 </style>
+
 <body>
     <div id="container">
-        <div>
-            <h1 id="title">NetFlix</h1>
+        <div id="title">
+            <span id="net">NET</span>
+            <span id="flix">FLIX</span>
         </div>
         <div>
             <p id="description">Thank you for signing up at Netflix. Tell us more about yourself</p>
         </div>
-    
+
         <form action="" id="survey-form">
             <div>
                 <label for="name">Name</label><br>
@@ -52,7 +88,7 @@ body{
                     <option value="sci-fic">Sci-Fic</option><br>
                     <option value="K-drama">K-drama</option><br>
                 </select>
-            </div>           
+            </div>
             <div class="box">
                 <label for="">Movie Type</label><br>
                 <label for="comedy">Comedy</label>
@@ -60,7 +96,7 @@ body{
                 <label for="action">Action</label>
                 <input type="checkbox" id="action"><br>
                 <label for="romance">Romance</label>
-                <input type="checkbox" id="romance">         
+                <input type="checkbox" id="romance">
             </div>
             <div class="box">
                 <div>
@@ -81,4 +117,5 @@ body{
         </form>
     </div>
 </body>
+
 </html>
